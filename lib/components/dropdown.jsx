@@ -13,15 +13,17 @@ var Dropdown = React.createClass({
 
   render: function () {
     return (
-      <select onChange={this.props.onChange} defaultValue={this.props.default}>
-        {
-          _.map(this.props.values, function (value, key) {
-            return (
-              <option key={key} value={key}>{value}</option>
-            )
-          })
-        }
-      </select>
+      <div className='dropdown'>
+        <select onChange={this.props.onChange} defaultValue={this.props.default}>
+          {
+            _.map(this.props.values, function (value, key) {
+              return (
+                <option key={key} value={key}>{value}</option>
+              )
+            })
+          }
+        </select>
+      </div>
     );
   },
 

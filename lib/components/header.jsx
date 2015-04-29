@@ -31,7 +31,7 @@ var Header = React.createClass({
             chromeshell: 'Chrome Secure Shell',
             gnome: 'Gnome Terminal',
             guake: 'Guake',
-            iterm: 'iTerm2',
+            iterm: 'iTerm2 (Nightly)',
             konsole: 'Konsole',
             linux: 'Linux console',
             mintty: 'MinTTY',
@@ -42,7 +42,7 @@ var Header = React.createClass({
             termite: 'Termite',
             xfce: 'XFCE4 Terminal',
             xresources: 'Xresources',
-            textmate: 'Sublime Text (experimental)',
+            // textmate: 'Sublime Text (experimental)',
             json: 'JSON Scheme',
           }}
           onChange={this.onChangeOutputFormat}

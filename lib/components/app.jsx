@@ -24,9 +24,7 @@ var App = React.createClass({
         <Header />
         <textarea className='source' ref='source'
           value={this.state.app.source} onChange={this.onChangeSource} />
-        <div className='output'>
-          {this.state.app.output}
-        </div>
+        <textarea className='output' value={this.state.app.output} />
       </div>
     );
   },

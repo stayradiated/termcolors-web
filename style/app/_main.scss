@@ -12,8 +12,7 @@ $header: 50px;
 header {
   @include pos(0, 0, auto, 0);
   height: $header;
-  background: #DCC4EA;
-  color: #55286D;
+  background: #10151B;
 
   h1 {
     float: left;
@@ -22,13 +21,25 @@ header {
     text-align: center;
     line-height: $header;
 
+    color: #26A98B;
     font-size: 20px;
-
+    font-family: monospace;
   }
 
-  select {
+  .dropdown {
     float: left;
     width: 30%;
+    margin-top: 13px;
+
+    select {
+      max-width: 200px;
+      margin-left: 20px;
+    }
+  }
+
+  .dropdown:last-child select {
+    float: right;
+    margin-right: 20px;
   }
 }
 
@@ -45,23 +56,25 @@ header {
   margin: 0;
 
   border: 0;
-  background: #1A1423;
+  outline: 0;
+  background: #0A0F14;
   color: #EEE4FC;
 }
 
 .output {
-  @extend #scrollXY;
   @include pos($header, 0, 0, auto);
   width: 50%;
 
   font-family: monospace;
   font-size: 14px;
   line-height: 21px;
-  white-space: pre;
 
   box-sizing: border-box;
   padding: 20px;
+  margin: 0;
 
-  background: #302442;
+  border: 0;
+  outline: 0;
+  background: #081F2D;
   color: #599BB4;
 }
